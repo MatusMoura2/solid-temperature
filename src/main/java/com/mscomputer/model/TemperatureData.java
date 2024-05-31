@@ -13,7 +13,7 @@ public class TemperatureData {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private UUID id;
+	private Long id;
 	private float temperature;
 	private float humidity;
 	private LocalDateTime time;
@@ -26,7 +26,7 @@ public class TemperatureData {
 
 
 
-	public TemperatureData(UUID id, float temperature, float humidity) {
+	public TemperatureData(Long id, float temperature, float humidity) {
 		this.id = id;
 		this.temperature = temperature;
 		this.humidity = humidity;
@@ -35,13 +35,13 @@ public class TemperatureData {
 
 
 
-	public UUID getId() {
+	public Long getId() {
 		return id;
 	}
 
 
 
-	public void setId(UUID id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
