@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Solid temperature</title>
+</head>
+<body>
+	<h1>Solid temperature</h1>
+	<table border="1">
+		<tr>
+			<th>#</th>
+			<th>Temperature</th>
+			<th>Humidity</th>
+			<th>Timetamp</th>
+		</tr>
+		<tr th:each="data : ${TemperatureData}">
+			<td th:text="${data.id}"></td>
+            <td th:text="${data.temperature}"></td>
+            <td th:text="${data.humidity}"></td>
+            <td th:text="${data.timestamp}"></td>
+		</tr>
+	</table>
+</body>
+</html>
